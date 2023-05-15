@@ -5,6 +5,7 @@ using namespace std;
 
 
 /*
+
 The function works by creating a new linked list and then iterating over the two input linked lists, node by node. For each node, the function adds the node with the smaller value to the new linked list. The function continues iterating until both input linked lists are empty. The function then returns the head of the new linked list.
 
 Here is a more detailed explanation of the steps the function takes:
