@@ -3,6 +3,14 @@
 
 using namespace std;
 
+/*
+
+The function works by first checking each character in the string to see if it is alphanumeric. If a character is not alphanumeric, it is skipped. Otherwise, the character is converted to lowercase and compared to the character at the opposite end of the string. If the characters are not equal, the function returns false. Otherwise, the function continues to the next character.
+
+If the function reaches the end of the string without returning false, it returns true. This means that the string is a palindrome.
+
+*/
+
 class Solution {
 public:
     bool isAlphanumeric(char ch)    {
