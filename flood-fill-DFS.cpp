@@ -3,6 +3,12 @@
 
 using namespace std;
 
+/*
+
+This code implements the flood-fill algorithm using depth-first search (DFS) to fill a region in an image with a specified color. The 'Solution' class contains a floodFill function that takes an image, starting position, and target color as parameters. The DFS function is a helper function that performs a depth-first search and updates the color of the cells in the image. It checks if the current cell is within the image boundaries and has the same color as the target cell. If so, it updates the cell's color and recursively calls itself for the adjacent cells. The floodFill function initializes variables and checks if the starting cell already has the target color. If not, it calls the DFS function to perform the flood-fill operation. Finally, the modified image is returned
+
+*/
+
 class Solution {
 public:
     
