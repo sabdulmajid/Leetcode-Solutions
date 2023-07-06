@@ -13,7 +13,7 @@ The function inverts the tree by recursively swapping the left and right child n
 */
 
 
-//  Definition for a binary tree node.
+// Definition for a binary tree node.
 struct TreeNode
 {
     int val;
