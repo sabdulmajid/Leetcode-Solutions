@@ -29,6 +29,7 @@ class Solution
 public:
     TreeNode *invertTree(TreeNode *root)
     {
+        
         // to invert the tree, you need to look at the left and right nodes of the root node, then swap them. We will definitely need to use recursion here. Some thing along the lines of:
         if (root == nullptr)
             return root;
