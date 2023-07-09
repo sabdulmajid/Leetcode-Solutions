@@ -3,13 +3,13 @@ If you are not seeing any specific output or simulation activity, it's possible 
 1. **Stop the current running processes:** In your terminal, where you launched the `roslaunch` command, press `Ctrl+C` to stop the running `roslaunch` process. This will terminate the current simulation setup.
 
 2. **Launch Gazebo:** Open a new terminal and launch Gazebo by running the following command:
-   ```
+   ```bash
    gazebo --verbose
    ```
    This command will launch Gazebo and provide verbose output, which can help in identifying any issues during the launch process.
 
 3. **Launch the simulation with Gazebo:** In a separate terminal, run the `roslaunch` command to launch the simulation environment with Gazebo. Use the following command:
-   ```
+   ```bash
    roslaunch mavros apm.launch fcu_url:=udp://:14550@ gcs_url:=udp://@
    ```
 
@@ -18,7 +18,7 @@ If you are not seeing any specific output or simulation activity, it's possible 
 5. **Verify MAVROS connection:** In the `roslaunch` terminal, ensure that the MAVROS node is running and successfully connected to the quadcopter. Look for the line `[ INFO] [MAVConnInterfaceUDP.cc:729] Interface: 0.0.0.0:14550, local: ????.` indicating a successful connection.
 
 6. **Publish the takeoff command:** Open a new terminal and run the `rostopic pub` command to publish the takeoff command:
-   ```
+   ```bash
    rostopic pub /mavros/setpoint_position/local geometry_msgs/PoseStamped "{
      header: {
        seq: 0,
