@@ -5,7 +5,12 @@ using namespace std;
 
 /* Code Explanation
 
+This code is a function that takes a list of intervals and a new interval as input, and returns a list of intervals that includes the new interval without overlapping. The function does the following steps:
 
+- It loops through the intervals until it finds one that ends after or at the same time as the new interval starts, and adds those intervals to the output list.
+- It merges the new interval with any intervals that start before or at the same time as the new interval ends, by updating the new interval's start and end to be the minimum and maximum of both intervals, respectively.
+- It adds the merged new interval to the output list.
+- It adds the remaining intervals that start after the new interval ends to the output list.
 
 */
 
