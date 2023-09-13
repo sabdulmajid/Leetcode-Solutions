@@ -5,7 +5,7 @@ using namespace std;
 
 /* Code Explanation
 
-
+The class has a helper function isvalid that checks if a given coordinate is within matrix bounds. The main function updateMatrix initializes a queue to store coordinates of zero-valued cells and a 2D vector dis to store distances. It first populates dis with -1 and the queue with the coordinates of zero-valued cells. Then, it uses Breadth-First Search (BFS) starting from these zero-valued cells to update dis with the minimum distances to a zero for each cell in the matrix. The updated dis vector is returned.
 
 */
 
