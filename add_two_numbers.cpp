@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/* Code explanation
+
+This code implements addition of two numbers represented by two linked lists. Each node contains a single digit and the digits are stored in reverse order, meaning that 1->2->3 represents the number 321. The Solution class contains a method addTwoNumbers that takes pointers to the heads of the two linked lists (l1 and l2) as arguments. A new list is initialized with a dummy head, and a pointer cur iterates through the lists, summing corresponding digits along with any carry from the previous sum. The sum's digit is stored in a new node appended to cur, and the carry (if any) is updated for the next iteration. The summing continues until both lists are exhausted and there's no remaining carry. The method returns the sum list starting from the first actual digit, skipping the dummy head.
+
+*/
+
 // Definition for singly-linked list.
 struct ListNode {
     int val;
