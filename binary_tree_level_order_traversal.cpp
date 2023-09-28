@@ -5,7 +5,7 @@ using namespace std;
 
 /* Code Explanation
 
-
+This code defines a TreeNode structure to represent a binary tree and a Solution class with a method levelOrder, which returns a vector of vectors representing the level-order traversal of a given binary tree. The levelOrder method initializes an empty result vector and a queue for BFS traversal, starting with the root node. It then enters a loop, processing each level of the tree, dequeuing nodes from the current level, and enqueuing their children for the next level. Each level's node values are collected into a temporary vector, which is then added to the result vector.
 
 */
 
