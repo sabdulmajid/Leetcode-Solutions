@@ -4,6 +4,11 @@
 using namespace std;
 
 /* Code Explanation
+
+The Solution class has two primary functions: dfs and cloneGraph. The dfs function is a private helper function used to deep copy (or clone) a graph node and its neighbors recursively. It uses a depth-first search approach to traverse and clone the graph. The unordered_map named mp is used to keep track of nodes that have already been cloned, ensuring that we don't end up in infinite loops and also to reuse the already cloned nodes when encountering them again.
+
+The cloneGraph function is the main public function that initiates the cloning process. It starts by checking for edge cases: if the input node is NULL, it returns NULL. If the node has no neighbors (i.e., it's a standalone node), it creates a new node with the same value and returns it. Otherwise, it calls the dfs function to clone the entire graph starting from the given node.
+
 */
 
 class Node {
