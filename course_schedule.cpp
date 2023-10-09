@@ -5,6 +5,7 @@ using namespace std;
 
 /* Code Explanation
 
+The code basically contains a function named canFinish which determines if it's possible to finish all courses given a total number of courses n and a list of course prerequisites. The prerequisites are represented as pairs, where one course is dependent on another. The function constructs an adjacency list (adj) representing the course dependency graph and computes the in-degree (number of prerequisites) for each course. Using a queue, the function then performs a topological sort on the courses: it starts by enlisting all courses with no prerequisites (in-degree 0) and iteratively processes courses, reducing the in-degree of their dependents. If all courses can be taken, the result of the topological sort (ans) should have n courses, and the function returns true; otherwise, it returns false, indicating that there are courses that cannot be completed due to cyclic dependencies.
 
 */
 
