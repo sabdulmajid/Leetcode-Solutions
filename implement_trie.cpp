@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -8,20 +9,24 @@ using namespace std;
 
 class Trie {
 public:
-    Trie() {
-        
-    }
-    
+    vector<string> words;
+    Trie() {}
     void insert(string word) {
-        
+        words.push_back(word);
     }
     
     bool search(string word) {
-        
+        auto it = find(words.begin(), words.end(), word);
+        if (it != words.end()) return true;
+        return false;
     }
     
     bool startsWith(string prefix) {
-        
+        for (int i = 0; i < words.size(); i++) {
+            string s = words[i];
+            if (s.substr(0, prefix.size()) == prefix) return true;
+        }
+        return false;
     }
 };
 
